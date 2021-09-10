@@ -1,0 +1,40 @@
+.Navbar {
+	display: flex;
+	justify-content: space-around;
+	padding: 4rem 0;
+	height: 13rem;
+}
+
+.colorBtn {
+	background-color: transparent;
+	border-radius: 6rem;
+	width: 20rem;
+	border: 1px solid #6809e1;
+	color: #6809e1;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.colorBtn-dark {
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.colorBtn-dark:hover {
+	color: #121212;
+}
+
+.colorBtn:active {
+	transform: scale(0.95);
+}
+
+.colorBtn:hover {
+	background-color: #50e3c2;
+}
+
+.Navbar-logo {
+	cursor: pointer;
+}
