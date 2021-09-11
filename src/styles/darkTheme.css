@@ -1,0 +1,32 @@
+.App-container.dark {
+	background-color: #111;
+	transition: all 0.3s ease-in-out;
+}
+
+div.dark,
+input.dark,
+button.dark,
+h2.dark,
+h3.dark {
+	color: #eee;
+	background-color: #222;
+	transition: all 0.3s ease-in-out;
+}
+
+.Results-title.dark {
+	background-color: transparent;
+}
+
+.Results-list.dark {
+	background-color: #111;
+}
+
+.colorBtn.dark {
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.colorBtn.dark:hover {
+	background-color: #fff;
+	color: #121212;
+}

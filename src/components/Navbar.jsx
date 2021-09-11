@@ -15,7 +15,7 @@ const Navbar = () => {
 				alt='Gifos' />
 			<button
 				onClick={() => {setIsDark(!isDark)}}
-				className={`colorBtn`}>
+				className={`colorBtn ${isDark ? 'dark' : ''}`}>
 				{`${isDark ? 'Modo Light' : 'Modo Dark'}`}
 			</button>
 		</nav>
