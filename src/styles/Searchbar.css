@@ -8,12 +8,7 @@
 
 .Searchbar-title {
 	font-size: 3.6rem;
-	color: #572ee5;
 	margin-bottom: 3rem;
-}
-
-.Searchbar-title-dark {
-	color: #fff;
 }
 
 .Searchbar-title span {
@@ -36,7 +31,6 @@
 }
 
 .Searchbar-input-dark {
-	color: #fff;
 	border: 1px solid #e7e7e7;
 }
 
