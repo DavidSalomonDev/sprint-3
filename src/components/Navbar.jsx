@@ -1,11 +1,8 @@
 import React from 'react'
-import './Navbar.css'
+import '../styles/Navbar.css'
+import { refreshPage } from '../utils/refreshPage'
 
 const Navbar = () => {
-	const refreshPage = () =>{
-		window.location.reload(true)
-	}
-
 	return (
 		<nav className='Navbar'>
 			<img
@@ -15,7 +12,7 @@ const Navbar = () => {
 				alt='Gifos' />;
 			<button
 				className={`colorBtn`}>
-				'Modo Light'
+				Modo Light
 			</button>
 		</nav>
 	)

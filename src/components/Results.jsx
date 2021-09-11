@@ -1,7 +1,7 @@
 import React from 'react'
-import './GifsList.css'
+import '../styles/Results.css'
 
-const GifsList = () => {
+const Results = () => {
 
 	return (
 		<main className = 'Results-trends'>
@@ -14,4 +14,4 @@ const GifsList = () => {
 	)
 }
 
-export default GifsList
+export default Results
