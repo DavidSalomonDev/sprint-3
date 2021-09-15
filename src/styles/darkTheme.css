@@ -7,7 +7,8 @@ div.dark,
 input.dark,
 button.dark,
 h2.dark,
-h3.dark {
+h3.dark,
+ul.dark {
 	color: #eee;
 	background-color: #222;
 	transition: all 0.3s ease-in-out;

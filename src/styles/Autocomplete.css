@@ -1,0 +1,28 @@
+.Autocomplete {
+	display: flex;
+	margin: 63rem auto 2rem;
+	border: 1px solid #572ee5;
+	border-radius: 1rem;
+	background-color: #eee;
+	width: 65rem;
+	position: absolute;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.Autocomplete ul {
+	width: 100%;
+}
+
+.Autocomplete li {
+	display: block;
+	padding: 1rem;
+	list-style: none;
+	cursor: pointer;
+	font-size: 2rem;
+	transition: all 0.2s ease-out;
+}
+
+.Autocomplete li:hover {
+	background-color: #bbb;
+}

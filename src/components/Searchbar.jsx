@@ -1,8 +1,13 @@
 import React, { useContext } from 'react'
 import ThemeContext from '../hooks/ThemeContext'
+import Autocomplete from './Autocomplete'
 import '../styles/Searchbar.css'
 
-const Searchbar = () => {
+const Searchbar = ({
+	gifs,
+	setGifs, 
+	suggestions
+}) => {
 	const {isDark} = useContext(ThemeContext)
 	return (
 		<div className = 'Searchbar'>
@@ -12,6 +17,8 @@ const Searchbar = () => {
 				<input
 					className = {`Searchbar-input ${isDark ? 'dark' : ''}`}
 					type = 'text'
+					onChange= {setGifs}
+					value={gifs}
 					placeholder = 'Busca gifs'
 				></input>
 				<button
@@ -21,6 +28,7 @@ const Searchbar = () => {
 					<img src = '/images/icon-search-mod-noc.svg' alt = 'submit' />
 				</button>
 			</form>
+			{suggestions.value.length > 0 && <Autocomplete suggestions = {suggestions} />}
 		</div>
 	)
 }
