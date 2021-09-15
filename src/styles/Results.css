@@ -1,6 +1,8 @@
 .Results {
 	margin: 0 auto;
 	width: 100%;
+	position: relative;
+	top: 0;
 }
 
 .Results-title {

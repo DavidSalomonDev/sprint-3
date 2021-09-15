@@ -27,8 +27,10 @@ const Searchbar = ({
 				>
 					<img src = '/images/icon-search-dark.svg' alt = 'submit' />
 				</button>
+				
 			</form>
-			{suggestions.value.length > 0 && <Autocomplete suggestions = {suggestions} />}
+			{suggestions.value.length > 0 && 
+				<Autocomplete gifs = {gifs}  />}
 		</div>
 	)
 }
