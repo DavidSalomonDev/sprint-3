@@ -25,7 +25,7 @@ const Searchbar = ({
 					type = 'submit'
 					className = {`Searchbar-btn `}
 				>
-					<img src = '/images/icon-search-mod-noc.svg' alt = 'submit' />
+					<img src = '/images/icon-search-dark.svg' alt = 'submit' />
 				</button>
 			</form>
 			{suggestions.value.length > 0 && <Autocomplete suggestions = {suggestions} />}
