@@ -1,12 +1,10 @@
 import React, { useContext } from 'react'
 import ThemeContext from '../hooks/ThemeContext'
-import Autocomplete from './Autocomplete'
 import '../styles/Searchbar.css'
 
 const Searchbar = ({
 	gifs,
 	setGifs, 
-	suggestions
 }) => {
 	const {isDark} = useContext(ThemeContext)
 	return (
@@ -29,8 +27,7 @@ const Searchbar = ({
 				</button>
 				
 			</form>
-			{suggestions.value.length > 0 && 
-				<Autocomplete gifs = {gifs}  />}
+			
 		</div>
 	)
 }

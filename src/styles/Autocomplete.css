@@ -1,14 +1,22 @@
 .Autocomplete {
 	display: flex;
-	margin: 0 auto 2rem;
+	margin: -3rem auto;
 	border: 1px solid #572ee5;
 	border-radius: 1rem;
 	background-color: #eee;
 	width: 65rem;
-	position: relative;
+	position: absolute;
 	z-index: 1000;
 	overflow: hidden;
-	align-items: start;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 42.5rem) {
+	/*Small smartphones [325px -> 425px]*/
+	.Autocomplete {
+		width: 45rem;
+	}
 }
 
 .Autocomplete.hide {

@@ -18,8 +18,8 @@ const App = () => {
 				<Searchbar 
 					gifs={gifs.value} 
 					setGifs={gifs.handleChange}
-					suggestions={suggestions}/>
-				<Results gifs={gifs.value}/>
+					/>
+				<Results suggestions={suggestions} gifs={gifs.value}/>
 			</div>
 		</div>
 	)
