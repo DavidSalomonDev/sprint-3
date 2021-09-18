@@ -14,7 +14,7 @@ const Autocomplete = ({gifs}) => {
 	const suggestionsArray = suggestionsResponse.data
 
 	const suggestionsList = suggestionsArray.map(suggestion => {
-		return <li ><img src="/images/icon-search.svg" alt="scope" /> {suggestion.name}</li>
+		return <li key={suggestion.name}><img  src="/images/icon-search.svg" alt="scope" /> {suggestion.name}</li>
 	})
 
 	return (
